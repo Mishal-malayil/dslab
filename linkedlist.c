@@ -25,12 +25,16 @@ void insertAtEnd(struct Node**head, int data){
        temp->next = n;
 }
 void deteleNode(struct Node**head, int key){
-	struct Node *temp = *head,*prev = NULL;
+	struct Node *temp = *head,*prev *curr = NULL;
 	while (temp && temp->data != key){prev = temp;temp=temp->next;}
 	if(!temp)return;
 	if(!prev)*head = temp->next;
 	else prev->next = temp->next;
 	free(temp);
+	if(!temp){
+		printf("Value not found\n",key);}
+	return;
+
 }
 void printList(struct Node*head){
 	for (;head;head=head->next)
