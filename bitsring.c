@@ -1,6 +1,4 @@
 #include <stdio.h>
-
-
 int createBitString(int set[], int size, int U[], int n) {
     int bitString = 0;
     for (int i = 0; i < size; i++) {
